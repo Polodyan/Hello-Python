@@ -63,8 +63,36 @@
 # not, and, or - не путать с &, |, ^
 # Кое-что еще: is, is not, in, not in
 
-func = 1
-T = 4
-x = 2
+#f = [1,2,3,4]
+# is_odd = not f[0] % 2
+# print(is_odd)
 
-print(func<T>(x))
+#Управляющие конструкции
+# if, if-else
+
+# a = int(input('a = '))
+# b = int(input('b = '))
+# if a > b:
+#    print(a)
+#else:
+#    print(b)
+
+#Управляющая конструкция while
+
+# original = 23
+# inverted = 0
+# while original !=0:
+  #  inverted = inverted * 10 + (original % 10)
+    # original //= 10
+#else:
+ #   print('Пожалуй')
+  #  print('хватит')
+#print(inverted)
+
+# list = [1,2,3,4,10,5]
+# for i in list:
+ #   print(i)
+
+r = range(10)
+for i in r:
+    print(i)
