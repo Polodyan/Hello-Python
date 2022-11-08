@@ -1,59 +1,61 @@
-import Control
+
 
 
 def CalcData():
     pass
 
 
-a=0
-b=0
-charO=''
+first = 0
+second = 0
+result = 0
+charO = ''
 
-# listOperator=['*' , '/' , '-']
-listOperator={'*':'MultiData' , '/':'DivisionData', '-':'SubData' , '+':'SumData'}
+listOperator = {'*': lambda x,y: int(x) * int(y), 
+                '/': lambda x,y: int(x) / int(y),
+                '-': lambda x,y: int(x) - int(y), 
+                '+': lambda x,y: int(x) + int(y)}
 
-def InitA(number:int):
-    global a
-    a = number
+def set_first(number:int):
+    global first
+    first = number
 
-def InitB(number:int):
-    global b
-    b = number
+def set_second(number:int):
+    global second
+    second = number
 
-def InitCharO(charOp: str):
-    global charO
-    charO = charOp
+def get_first():
+    global first
+    return first
 
-def GetA():
-        global a
-        return a
+def get_second():
+    global second
+    return second
+
+def get_result():
+    global result
+    return result
+
+def set_result(oper: str):
+    global result
+    result = listOperator[oper](first, second)
+
+
+
+
+# def InitCharO(charOp: str):
+#    global charO
+#   charO = charOp
+
+#def GetA():
+#        global a
+#       return a
     
-def GetB():
-        global b
-        return b
+#def GetB():
+#        global b
+#        return b
 
-def SumData():
-    global a
-    global b
-    return a + b
 
-def MultiData():
-    global a
-    global b
-    return a*b
-
-def SubData():
-    global a
-    global b
-    return a - b
-
-def DivisionData():
-    global a
-    global b
-    return int(a/b)
-
-def OperatorChoice():
-    global a
-    global b
-    global charO
-    
+#def OperatorChoice():
+#    global a
+#    global b
+#    global charO

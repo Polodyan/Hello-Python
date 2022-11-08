@@ -4,5 +4,6 @@ import Control
 
 
 Control.InitData()
-Control.PrintValues()
-Control.PrintSum()
+#Control.PrintValues()
+#Control.PrintSum()
+Control.solution()

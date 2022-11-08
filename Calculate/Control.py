@@ -3,18 +3,24 @@ import View,Model
 def InitData():
     a=View.InputData('A')
     b=View.InputData('B')
-    Model.InitA(a)
-    Model.InitB(b)
+    Model.set_first(a)
+    Model.set_second(b)
 
 def PrintValues():
-    a=Model.GetA()
-    b=Model.GetB()
+    a=Model.get_first()
+    b=Model.get_second()
     View.OutputData(a)
     View.OutputData(b)
 
-def PrintSum():
-    result=Model.SumData()
-    View.OutputResult(result)
+#def PrintSum():
+#    result=Model.SumData()
+#    View.OutputResult(result)
 
-def InitOperaton():
-    operation=View.InputData('Введите оператор')
+#def InitOperaton():
+#    operation=View.InputData('Введите оператор')
+
+def solution():
+    oper = View.InputOperation()
+    Model.set_result(oper)
+    result = Model.get_result()
+    View.OutputResult(result)

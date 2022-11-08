@@ -8,6 +8,6 @@ def OutputData(number):
 def OutputResult(number):
     print(f'Результат операции = {number}')
 
-def InputOperation(number):
-    charO=str(input(f'Введите оператор {charO}: '))
-    return charO
+def InputOperation():
+    oper = input(f'Введите оператор: ')
+    return oper
