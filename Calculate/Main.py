@@ -3,7 +3,8 @@
 import Control
 
 
-Control.InitData()
+#Control.InitData()
 #Control.PrintValues()
 #Control.PrintSum()
-Control.solution()
+#Control.solution()
+Control.start()

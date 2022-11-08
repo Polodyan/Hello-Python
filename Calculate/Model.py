@@ -37,7 +37,13 @@ def get_result():
 
 def set_result(oper: str):
     global result
-    result = listOperator[oper](first, second)
+    global second
+    if second != 0 and oper != '/':
+        result = listOperator.get(oper)(first, second)
+    else:
+        result = None
+
+    
 
 
 

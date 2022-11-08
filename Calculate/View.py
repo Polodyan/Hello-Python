@@ -11,3 +11,6 @@ def OutputResult(number):
 def InputOperation():
     oper = input(f'Введите оператор: ')
     return oper
+
+def division_by_zero():
+    print('Деление на ноль!')
