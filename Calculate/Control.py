@@ -11,3 +11,7 @@ def PrintValues():
     b=Model.GetB()
     View.OutputData(a)
     View.OutputData(b)
+
+def PrintSum():
+    result=Model.SumData()
+    View.OutputData(result)

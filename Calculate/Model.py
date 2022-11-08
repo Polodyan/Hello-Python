@@ -1,21 +1,31 @@
+import Control
+
+
 def CalcData():
     pass
+
 
 a=0
 b=0
 
+
 def InitA(number:int):
     global a
-    a=number
+    a = number
 
 def InitB(number:int):
     global b
-    b=number
+    b = number
 
-    def GetA():
+def GetA():
         global a
         return a
     
-    def GetB():
+def GetB():
         global b
         return b
+
+def SumData():
+    global a
+    global b
+    return a + b
