@@ -14,4 +14,7 @@ def PrintValues():
 
 def PrintSum():
     result=Model.SumData()
-    View.OutputData(result)
+    View.OutputResult(result)
+
+def InitOperaton():
+    operation=View.InputData('Введите оператор')

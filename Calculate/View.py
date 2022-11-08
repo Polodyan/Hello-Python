@@ -4,3 +4,10 @@ def InputData(number):
 
 def OutputData(number):
     print(f' Число {number}')
+
+def OutputResult(number):
+    print(f'Результат операции = {number}')
+
+def InputOperation(number):
+    charO=str(input(f'Введите оператор {charO}: '))
+    return charO
