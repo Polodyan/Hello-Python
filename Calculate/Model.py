@@ -11,3 +11,11 @@ def InitA(number:int):
 def InitB(number:int):
     global b
     b=number
+
+    def GetA():
+        global a
+        return a
+    
+    def GetB():
+        global b
+        return b
